@@ -25,7 +25,6 @@ public class OneOfEachStats {
 		//// randomization will be based on the given seed.
 		//// This is the only change that you have to do in the program.
 
-		int T = Integer.parseInt(args[0]);
 		int counterOfChildren = 0;
 		int randomNum = -1;
 		char bOrG = 'a';
