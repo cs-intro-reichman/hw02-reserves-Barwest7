@@ -6,7 +6,7 @@ public class DamkaBoard {
 		int userInput = Integer.parseInt(args[0]);
 		
 		for (int i=0; i<userInput; i++) {
-			if (i%2==1)
+			if (i%2==0)
 				System.out.print(" ");
 			for (int j=0; j<userInput; j++) {
 				System.out.print("* ");
