@@ -14,7 +14,7 @@ public class OneOfEachStats {
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
-		
+
 		//// In the previous version of this program, you used a statement like:
 		//// double rnd = Math.random();
 		//// Where "rnd" is the variable that stores the generated random value.
@@ -26,7 +26,6 @@ public class OneOfEachStats {
 		//// This is the only change that you have to do in the program.
 
 		int counterOfChildren = 0;
-		int randomNum = -1;
 		char bOrG = 'a';
 		boolean girlFlag = false;
 		boolean boyFlag = false;
@@ -45,7 +44,7 @@ public class OneOfEachStats {
 			while (!boyFlag || !girlFlag) {
 			
 				// Generate a randoum number: 0 or 1 (50% chance for each)
-				randomNum = (int)generator.nextDouble();
+				int randomNum = (int)(generator.nextDouble()*2);
 
 				// Decide tentatively that 0 is for girl and 1 is for boy
 				if (randomNum==1) {
@@ -86,6 +85,5 @@ public class OneOfEachStats {
 		System.out.println("Number of families with 3 children: " + familiesOfThree);
 		System.out.println("Number of families with 4 or more children: " + familiesOfFour);
 		System.out.println("The most common number of children is " + mostCommon);
-		    
 	}
 }
